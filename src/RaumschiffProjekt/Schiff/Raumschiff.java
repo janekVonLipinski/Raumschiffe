@@ -7,6 +7,17 @@ import java.util.Random;
 
 public class Raumschiff {
 
+
+    /**
+     *  energieversorgungInProzent - Die Energieversorgung in Prozent
+     *  schildeInProzent - Der Schild in Prozent
+     *  huelleInProzent - Die Huelle in Prozent
+     *  lebenserhaltungssystemeInProzent - Die Lebenserhaltungssysteme, sind diese auf 0 ist das Schiff tot
+     *  anzahlPhotonenTorpedos - Anzahl der PhotonenTorpedos
+     *  androidenAnzahl - Anzahl der Androiden
+     *  schiffsname - Name des Schiffs
+     *  ladungsverzeichnis - arrayList, die Laudungen speichert
+     */
     private int energieversorgungInProzent;
     private int schildeInProzent;
     private int huelleInProzent;
@@ -119,36 +130,57 @@ public class Raumschiff {
 
     /**
      * setzt Anzahl der Photonentorpedos auf übergebenen Wert
-     * @param anzahlPhotonenTorpedos
+     * @param anzahlPhotonenTorpedos - wert auf den gestezt werden soll
      */
     public void setAnzahlPhotonenTorpedos(int anzahlPhotonenTorpedos) {
         this.anzahlPhotonenTorpedos = anzahlPhotonenTorpedos;
     }
 
     /**
-     *
-     * @return
+     * gibt die Anzahl der Androiden zurück
+     * @return androidenAnzahl
      */
     public int getAndroidenAnzahl() {
         return androidenAnzahl;
     }
 
+    /**
+     * setzt die Androiden auf den übergebenen Wert
+     * @param androidenAnzahl - Wert auf den gesetzt werden soll
+     */
+
     public void setAndroidenAnzahl(int androidenAnzahl) {
         this.androidenAnzahl = androidenAnzahl;
     }
+
+    /**
+     * gibt den Name des Schiffs zurück
+     * @return schiffsname
+     */
 
     public String getSchiffsname() {
         return schiffsname;
     }
 
+    /**
+     * setzt den Schiffsnamen auf den übergebenen Wert
+     * @param schiffsname - der Schiffsname
+     */
     public void setSchiffsname(String schiffsname) {
         this.schiffsname = schiffsname;
     }
 
+    /**
+     * fügt eine ladung dem Ladungsverzeichnis hinzu
+     * @param ladung - die hinzugefuegte Ladung
+     */
     public void addLadung(Ladung ladung) {
         ladungsVerzeichnis.add(ladung);
     }
 
+    /**
+     * gibt den Zustand des Raumschiffs aus
+     */
     public void ausgeben() {
         System.out.println(this);
     }

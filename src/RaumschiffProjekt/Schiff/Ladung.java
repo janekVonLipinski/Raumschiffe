@@ -1,10 +1,23 @@
 package RaumschiffProjekt.Schiff;
 
+/**
+ * eine Klasse die Ladung auf einem Raumschiff repräsentiert
+ */
 public class Ladung {
 
+
+    /**
+     * bezeichnung - Bezeichnung der Ladung
+     * menge - anzahl der Ladung
+     */
     private String bezeichnung;
     private int menge;
 
+    /**
+     * erstellt eine Ladung mit den übergebenen Werten
+     * @param bezeichnung - Bezeichnung der Ladung
+     * @param menge - Anzahl der Ladung
+     */
     public Ladung(String bezeichnung, int menge) {
         this.bezeichnung = bezeichnung;
         this.menge = menge;
