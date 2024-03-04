@@ -1,9 +1,9 @@
-package RaumschiffProjekt.Schiff;
+package RaumschiffProjekt.TransportObjekte;
 
 /**
  * eine Klasse die Ladung auf einem Raumschiff repräsentiert
  */
-public class Ladung {
+public abstract class Ladung {
 
 
     /**

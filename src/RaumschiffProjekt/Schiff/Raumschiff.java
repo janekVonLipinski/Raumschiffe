@@ -1,5 +1,7 @@
 package RaumschiffProjekt.Schiff;
 
+import RaumschiffProjekt.TransportObjekte.Ladung;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -247,9 +249,9 @@ public class Raumschiff {
      */
     public void setzeReparaturAndroidenEin(boolean wirdSchildRepariert, boolean wirdEnergieversorgungRepariert,
                                            boolean wirdHuelleRepariert, int anzahlEingesetzterAndroiden) {
+
         int anzahlReperaturen = getAnzahlReperaturen(wirdEnergieversorgungRepariert, wirdHuelleRepariert,
                 wirdSchildRepariert);
-
         int reparaturStaerke = getReparaturStaerke(anzahlEingesetzterAndroiden, anzahlReperaturen);
 
         repariereSchiffsteile(
